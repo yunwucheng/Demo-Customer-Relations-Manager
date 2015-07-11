@@ -8,6 +8,16 @@
 </head>
 <body>
 
+<header>
+   <Nav>
+      <ul>
+         <li><%= link_to 'Home', root_path %></li>
+         <li><%= link_to 'Alphabetized', alphabetized_path %></li>
+         <li><%= link_to 'Missing Email', missing_email_path %></li>
+      </ul>
+   </nav>
+</header>
+<%# will expand index.html.erb through the following yield command%>
 <%= yield %>
 
 </body>
